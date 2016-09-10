@@ -1,0 +1,23 @@
+{
+  "name": "maite",
+  "version": "1.0.0",
+  "description": "Mixin builder for recipes",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "lab -vcCD test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hapipip/maite.git"
+  },
+  "keywords": [
+    "mixin",
+    "recipe"
+  ],
+  "author": "Nicolas Dufreche <n.dufreche@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/hapipip/maite/issues"
+  },
+  "homepage": "https://github.com/hapipip/maite#readme"
+}
