@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/hapipip/maite/issues"
   },
-  "homepage": "https://github.com/hapipip/maite#readme"
+  "homepage": "https://github.com/hapipip/maite#readme",
+  "devDependencies": {
+    "code": "^3.0.2",
+    "lab": "^11.0.1"
+  },
+  "dependencies": {
+    "hoek": "^4.0.2"
+  }
 }
