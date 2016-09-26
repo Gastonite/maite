@@ -4,7 +4,7 @@
   "description": "Mixin builder for recipes",
   "main": "lib/index.js",
   "scripts": {
-    "test": "lab -vcCD test/index.js"
+    "test": "lab -vcCD test/inde.js"
   },
   "repository": {
     "type": "git",
