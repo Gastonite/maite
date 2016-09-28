@@ -1,7 +1,7 @@
 'use strict';
 
 const Lab =  require('lab');
-const Maite = require('../lib/index');
+const Maite = require('../lib');
 const {expect} = require('code');
 const {describe, it, beforeEach} = exports.lab = Lab.script();
 
@@ -18,9 +18,9 @@ describe('Maite test', () => {
         ga: 'zo',
         meu: 'meu'
       }
-    }
+    };
     done();
-  })
+  });
 
   it('Maite test mixin', done => {
     const recipe = Maite.prepare(fixtures);
@@ -68,7 +68,7 @@ describe('Maite test', () => {
     expect(recipe.ga).to.equals('bu');
     expect(recipe.zo).to.equals('meu');
     expect(recipe.meu).to.equals('meu');
-    expect(Maite.cook(recipe, ['meu'], 'init')).to.equals('Ga bu zo meu');
+    expect(Maite.cook(recipe, ['meu'])).to.equals('Ga bu zo meu');
     done();
   });
 });
