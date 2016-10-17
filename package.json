@@ -1,10 +1,12 @@
 {
   "name": "maite",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Mixin builder for recipes",
   "main": "lib/index.js",
   "scripts": {
-    "test": "lab -vcCD test/inde.js"
+    "test": "lab -r lcov | ./node_modules/.bin/coveralls",
+    "test-recipe": "lab -vcCD test/recipe.js",
+    "testwatch": "fsmonitor -s -p '+*.js' npm test"
   },
   "repository": {
     "type": "git",
@@ -14,7 +16,10 @@
     "mixin",
     "recipe"
   ],
-  "author": "Nicolas Dufreche <n.dufreche@gmail.com>",
+  "author": [
+    "Nicolas Dufreche <n.dufreche@gmail.com>",
+    "Clément Pasquier <clement@n00sphere.net>"
+  ],
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/hapipip/maite/issues"
@@ -22,9 +27,15 @@
   "homepage": "https://github.com/hapipip/maite#readme",
   "devDependencies": {
     "code": "^3.0.2",
+    "coveralls": "^2.11.14",
+    "fsmonitor": "^0.2.4",
     "lab": "^11.0.1"
   },
   "dependencies": {
-    "hoek": "^4.0.2"
+    "is-iterable": "^1.1.0",
+    "lodash.identity": "^3.0.0",
+    "lodash.isplainobject": "^4.0.6",
+    "hoek": "^4.0.2",
+    "joi": "^9.0.4"
   }
 }
